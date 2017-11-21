@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>News Aggregator</title>
+  <link rel="stylesheet" href="./stylesheets/server.css">
+</head>
+
+<body>
+  <h1> News Aggregator </h1>
+  <h3> List of Articles </h3>
+  <ul>
+    <% @articles.each do |article| %>
+      <li><a href="<%= article["url"] %>"
+            target="_blank"><%= article["title"] %></a><br><br>
+         <%= article["description"] %><br><br>
+      </li>
+    <% end %>
+  </ul>
+  <a href="/articles/new">Enter a News Article</a><br><br>
+  <a href="/">Return To The Homepage</a>
+</body>
+</html>

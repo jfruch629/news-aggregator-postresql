@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Slacker Articles - New Article</title>
+    <link rel="stylesheet" href="./stylesheets/server.css">
+  </head>
+
+  <body>
+    <h1> Article Upload Template: </h1>
+
+    <form action="/create" method="post">
+      <div class="form-article">
+        <label for="title">Article Title:</label>
+        <input type="text" id="title" name="title">
+      </div><br>
+
+      <div class="form-article">
+        <label for="url">URL:</label>
+        <input type="text" id="url" name="url">
+      </div><br>
+
+      <div class="form-article">
+        <label for="description">Description:</label>
+        <input type="text" id="description" class="description" name="description" size="100">
+      </div>
+      <br>
+      <div class="form-article">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <br><br>
+    <a href="/">Return To The Homepage</a>
+  </body>
+</html>

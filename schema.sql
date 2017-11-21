@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS articles;
+
+CREATE TABLE articles (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(300) NOT NULL,
+  url VARCHAR(300) NOT NULL,
+  description VARCHAR(5000) NOT NULL
+);
